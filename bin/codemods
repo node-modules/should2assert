@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+'use strict';
+const meow = require('meow');
+const should2assert = require('../');
+
+const cli = meow(`
+    Usage
+      $ should2assert [<file|glob> ...]
+
+    Options
+      -c, --cwd  current working directory
+
+    Examples
+      $ should2assert test
+`, {
+  alias: {
+    c: 'cwd'
+  },
+  default: {
+    cwd: process.cwd(),
+  },
+});
+
+should2assert(cli.input[0], cli.flags)
+  .catch(err => {
+    console.error(err.stack);
+    process.exit(1);
+  });;
