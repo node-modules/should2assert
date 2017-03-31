@@ -43,7 +43,7 @@
     "coffee": "^3.3.0",
     "contributors": "^0.5.1",
     "cpy": "^5.0.0",
-    "egg-bin": "^3.1.0",
+    "egg-bin": "^3.2.0",
     "egg-ci": "^1.6.0",
     "eslint": "^3.18.0",
     "eslint-config-egg": "^3.2.0",
