@@ -34,6 +34,7 @@ describe('test/xxx.test.js', () => {
     (() => {
       throw new Error('mock error');
     }).should.throw();
+    obj.should.have.property('a');
     obj.should.have.properties('a');
     obj.should.have.properties([ 'a', 'b' ]);
     obj.should.have.properties({ a: '123', c: false });

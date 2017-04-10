@@ -35,6 +35,7 @@ describe('test/xxx.test.js', () => {
       throw new Error('mock error');
     });
     assert([ 'a' ].every(p => Object.prototype.hasOwnProperty.call(obj, p)));
+    assert([ 'a' ].every(p => Object.prototype.hasOwnProperty.call(obj, p)));
     assert([ 'a', 'b' ].every(p => Object.prototype.hasOwnProperty.call(obj, p)));
     Object.keys({ a: '123', c: false }).forEach(p => assert.deepEqual((obj)[p], ({ a: '123', c: false })[p]));
   });
