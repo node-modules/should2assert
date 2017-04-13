@@ -37,5 +37,7 @@ describe('test/xxx.test.js', () => {
     obj.should.have.properties('a');
     obj.should.have.properties([ 'a', 'b' ]);
     obj.should.have.properties({ a: '123', c: false });
+    obj.should.have.property('a');
+    a.should.length(3);
   });
 });

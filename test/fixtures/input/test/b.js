@@ -11,6 +11,7 @@ describe('test/b.test.js', () => {
     const obj = {};
     const arr = [];
     const b = true;
+    const c = false;
     const fn = () => {};
     const err = new Error('mock error');
     const date = new Date();
@@ -60,5 +61,7 @@ describe('test/b.test.js', () => {
     date.should.be.a.Date();
     obj.should.not.be.a.Date;
     obj.should.not.be.a.Date();
+    b.should.be.true;
+    c.should.be.false;
   });
 });

@@ -10,6 +10,7 @@ describe('test/b.test.js', () => {
     const obj = {};
     const arr = [];
     const b = true;
+    const c = false;
     const fn = () => {};
     const err = new Error('mock error');
     const date = new Date();
@@ -59,5 +60,7 @@ describe('test/b.test.js', () => {
     assert(Object.prototype.toString.call(date) === '[object Date]');
     assert(Object.prototype.toString.call(obj) !== '[object Date]');
     assert(Object.prototype.toString.call(obj) !== '[object Date]');
+    assert(b);
+    assert(!c);
   });
 });
