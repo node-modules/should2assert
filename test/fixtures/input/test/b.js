@@ -63,5 +63,7 @@ describe('test/b.test.js', () => {
     obj.should.not.be.a.Date();
     b.should.be.true;
     c.should.be.false;
+    b.should.be.true();
+    c.should.be.false();
   });
 });

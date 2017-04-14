@@ -62,5 +62,7 @@ describe('test/b.test.js', () => {
     assert(Object.prototype.toString.call(obj) !== '[object Date]');
     assert(b);
     assert(!c);
+    assert(b);
+    assert(!c);
   });
 });
