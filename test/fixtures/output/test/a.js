@@ -39,5 +39,7 @@ describe('test/xxx.test.js', () => {
     Object.keys({ a: '123', c: false }).forEach(p => assert.deepEqual((obj)[p], ({ a: '123', c: false })[p]));
     assert(Object.prototype.hasOwnProperty.call(obj, 'a'));
     assert(a.length === 3);
+    assert(a.length === 0);
+    assert(a.length === 0);
   });
 });

@@ -39,5 +39,7 @@ describe('test/xxx.test.js', () => {
     obj.should.have.properties({ a: '123', c: false });
     obj.should.have.property('a');
     a.should.length(3);
+    a.should.be.empty;
+    a.should.be.empty();
   });
 });
