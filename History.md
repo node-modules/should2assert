@@ -1,5 +1,10 @@
 
-1.2. / 2017-04-13
+1.3.0 / 2017-05-02
+==================
+
+  * feat: support shoud.be.true/false() (#6)
+
+1.2.0 / 2017-04-13
 ==================
 
   * feat: support more should.js api

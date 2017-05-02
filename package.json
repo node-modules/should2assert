@@ -1,6 +1,6 @@
 {
   "name": "should2assert",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A tool to help you migrating from should to assert",
   "main": "index.js",
   "bin": {
