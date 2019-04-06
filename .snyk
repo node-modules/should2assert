@@ -1,0 +1,8 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - jscodeshift > babel-core > babel-plugin-proto-to-assign > lodash:
+        patched: '2019-04-06T07:18:57.239Z'
